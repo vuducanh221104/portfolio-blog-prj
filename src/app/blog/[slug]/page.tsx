@@ -14,13 +14,14 @@ export function generateStaticParams() {
 }
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = portfolioConfig.blogPosts.find((p) => p.slug === params.slug);
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params;
+  const post = portfolioConfig.blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();
@@ -49,7 +50,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             Blog
           </Link>
           <span>/</span>
-          <span className="text-primary">{post.slug}</span>
+          <span className="text-primary">{slug}</span>
         </nav>
 
         {/* Header */}
