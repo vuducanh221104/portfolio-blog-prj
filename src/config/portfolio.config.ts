@@ -457,7 +457,7 @@ app.listen(3000, () => {
       issuer: "Cisco Networking Academy",
       issued: "2025",
       image: "/badge/JS1.png",
-      link: "#",
+      link: "/linkBadge/JS1.pdf",
       description: "Statement of Achievement for completing the JavaScript Essentials 1 course, provided by Cisco Networking Academy in collaboration with OpenEDG JavaScript Institute.",
     },
     {
@@ -465,7 +465,7 @@ app.listen(3000, () => {
       issuer: "Cisco Networking Academy",
       issued: "2025",
       image: "/badge/JS2.png",
-      link: "#",
+      link: "/linkBadge/JS2.pdf",
       description: "Statement of Achievement for completing the JavaScript Essentials 2 course, provided by Cisco Networking Academy in collaboration with OpenEDG JavaScript Institute.",
     },
     {
@@ -473,7 +473,7 @@ app.listen(3000, () => {
       issuer: "Cisco Networking Academy",
       issued: "2025",
       image: "/badge/Network.png",
-      link: "#",
+      link: "/linkBadge/Network.pdf",
       description: "Certificate of Course Completion for completing the Networking Basics course.",
     },
   ],
