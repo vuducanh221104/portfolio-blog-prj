@@ -101,8 +101,7 @@ export default function Home() {
             </Badge>
             <div className="flex flex-col gap-5">
               <Heading>
-                {portfolioConfig.title} And Web <br /> Developer{" "}
-                {portfolioConfig.about.personalInfo.nationality}.
+                {portfolioConfig.title}
               </Heading>
 
               <ScrollReveal direction="left" delay={0.2}>
